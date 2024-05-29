@@ -7,11 +7,13 @@
 
 import Foundation
 import SwiftUI
+import SecondModule
 
 enum Screen: Hashable {
     case firstScreen
     case secondScreen(data: String)
     case thirdScreen
+    case fourthView
     
     @ViewBuilder
     func view() -> some View {
@@ -22,6 +24,8 @@ enum Screen: Hashable {
             SecondScreen(data: data)
         case .thirdScreen:
             ThirdScreen()
+        case .fourthView:
+            FourthView()
         }
     }
 }

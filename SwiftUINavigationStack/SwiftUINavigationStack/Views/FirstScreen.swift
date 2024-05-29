@@ -19,6 +19,10 @@ struct FirstScreen: View {
             Button("Go to Third Screen") {
                 navigationManager.path.append(Screen.thirdScreen)
             }
+            
+            Button("Go to Fourth Screen") { // Yeni buton ekleniyor
+                navigationManager.path.append(Screen.fourthView)
+            }
         }
         .navigationTitle("First Screen")
     }
